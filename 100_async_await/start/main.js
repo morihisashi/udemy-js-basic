@@ -6,10 +6,12 @@ async function init(){
         const result = await new Promise((resolve, reject) => {
             setTimeout(() => {
                 a = 1;
-                reject(a)
+                // reject(a)
+                resolve(a);
             }, 2000);
         })
         console.log(result);
+        //console.log(a);
     } catch(e) {
         console.log('catchが実行', e)
     }
