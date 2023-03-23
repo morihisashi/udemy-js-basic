@@ -6,6 +6,7 @@ new Promise((resolve, reject) => {
     setTimeout(() => {
         a = 1;
         reject(a);
+        //resolve(a);
     }, 2000);
 }).then((b) => {
     console.log(b);
